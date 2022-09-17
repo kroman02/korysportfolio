@@ -47,8 +47,14 @@ function Header() {
             <ul>
                 <li><NavLink className={({isActive}) => isActive ? "link active" : "link"} to="/">root</NavLink></li>
                 {/* <li><NavLink className={({isActive}) => isActive ? "link active" : "link"} to="/projects">projects</NavLink></li> */}
-                <li onMouseLeave={handleMouseExitFromLink} 
-                onMouseEnter={handleHoverLink}><a className="link" href="#">Projects</a>{(hoveringOnLink || hoveringOnMenu) && <Dropdown handleMouseOver={handleHoverMenu} handleMouseOut={handleMouseExitFromMenu} />}</li>
+                <li 
+                onMouseLeave={handleMouseExitFromLink} 
+                onMouseEnter={handleHoverLink}><a className="link" href="#">Projects</a>{(hoveringOnLink || hoveringOnMenu) 
+                    && 
+                <Dropdown setParentActive={setParentMenuActive} 
+                handleMouseOver={handleHoverMenu} 
+                handleMouseOut={handleMouseExitFromMenu} />}
+                </li>
                 <li><NavLink className={({isActive}) => isActive ? "link active" : "link"} to="/aboutme">about me</NavLink></li>
                 <li><NavLink className={({isActive}) => isActive ? "link active" : "link"} to="/hireme">hire me</NavLink></li>
             </ul>

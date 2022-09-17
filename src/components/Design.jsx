@@ -5,24 +5,22 @@ const Design = () => {
 
     return (
         <>
-        <div className="left_deco"></div>
+        <img src='../../public/gallery_deco.png' className="left_deco" />
     <div className="gallery">
-        <img src='../../public/savvatore.gif' />
-        <img src='../../public/a1.jpg' />
-        <img className="lion" src='../../public/lion2.png' />
-        <img className="row-span-2" src='../../public/index.jpg' />
-        <img className="col-span-2" src='../../public/jobrange.png' />
+        <a><img src='../../public/savvatore.gif' /></a>
+        <a><img src='../../public/a1.jpg' /></a>
+        <a><img className="lion" src='../../public/lion2.png' /></a>
+        <a className="row-span-2"><img  src='../../public/index.jpg' /></a>
+        <a target='_blank' href='../../public/jobrange.png' className="col-span-2"><img  src='../../public/jobrange.png' /></a>
         <div className="design_header"><h1>Design</h1></div>
-        <img src='../../public/Df.jpg' />
+        <a target='_blank' href='../../public/Df.jpg'><img src='../../public/Df.jpg' /></a>
         <div className="inner_gallery">
-                {/* <img src='../../public/EMPIRE1.jpg' />
-                <img src='../../public/life.png' /> */}
-                <div className="inner_images empire"></div>
-                <div className="inner_images life"></div>
+        <a target='_blank' className="inner_images empire" href='../../public/EMPIRE1.jpg'></a>
+        <a target='_blank' className="inner_images life" href='../../public/life.png'></a>
         </div>
-        <img className="waterplane" src='../../public/waterplane.png' />
+        <a href='../../public/waterplane.png' target='_blank' className="waterplane"><img href=""  src='../../public/waterplane.png' /></a>
     </div>
-    <div className="right_deco"></div>
+    <img href="#" src='../../public/gallery_deco.png' className="right_deco" />
     </>
 )
 
