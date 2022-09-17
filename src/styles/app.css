@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html { height: 100%; }
+
+body{
+    min-height: 100%;
+    background: #222222;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    overflow-y: hidden;
+}
+
+.stripes_img {
+    background-image: url("../../public/stripesbg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 74px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+}
+
+
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: #24FDAF;
+  }
+  
+  ::selection {
+    color: #fff;
+    background: #24FDAF;
+  }
+
+  @media (max-width: 800px) {
+
+
+    .stripes_img {
+        display: none;
+        
+       
+
+    }
+
+}

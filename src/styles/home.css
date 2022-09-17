@@ -1,0 +1,426 @@
+.home_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 145px;
+    margin-right: 145px;
+    min-height: 100%;
+}
+
+.left_side{
+    padding-left: 3.3rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.left_side > h2 {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: -20px;
+    padding:0;
+    margin-top: 180px;
+    font-size: 6rem;
+    font-weight: 300;
+    
+}
+
+.left_side > h1 {
+    margin-bottom: -15px;
+    
+    font-size: 8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.left_side > h3 {
+    color: #929292;
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.left_side > h1, h2, h3 {
+    animation: appear 2s forwards;
+}
+
+.description_home {
+    width: 500px;
+    opacity: 0;
+    animation: appear 2s forwards;
+    animation-delay: 1s;
+}
+
+
+/* RIGHT SIDE */
+
+
+.stack {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50% ;
+    gap: 50px;
+    width: 280px;
+    height: 280px;
+    right: 10%;
+    bottom: 20%;
+    position: absolute;
+}
+
+.stack_element {
+    border-radius: 12px;
+    background-color: #92929290;
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.stack_element:hover{
+    background-color: #adadad90;
+}
+
+
+
+
+.stack_selector {
+    position: absolute;
+    left: -10px;
+    top: -9px;
+    border: 3px solid rgb(255, 255, 255);
+    z-index: 10;
+    opacity: 0.4;
+    border-radius: 15%;
+    padding: 4.8rem;
+    animation: selecting 7s ease-out infinite;
+    animation-delay: 2s;
+    z-index: -2;
+}
+
+.lines{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -5;
+}
+
+.dots_bottom{
+    position:absolute;
+    bottom: 12rem;
+    animation: enter_from_left 3s forwards;
+}
+
+.dots_top{
+    position:absolute;
+    top: 250px;
+    animation: enter_from_right 4s forwards;
+    transition: 200ms;
+}
+
+.dots_bottom:hover {
+    left: 38%;
+}
+
+@keyframes enter_from_right {
+
+    from {
+        left: 80%;
+      }
+      to {
+        left: 36%;
+      }
+}
+
+@keyframes enter_from_left {
+    from {
+        left: -10%;
+      }
+      to {
+        left: 6%;
+      }
+}
+
+@Keyframes appear {
+    from {
+        opacity: 0.0;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
+
+@keyframes selecting {
+    20% {left: -10px; top: -9px;}
+    40% {left: 181px; top: -9px;}
+    60% {left: 181px; top: 181px;}
+    80% {left: -10px; top: 181px;}
+    100% {left: -10px; top: -9px;}
+}
+
+/* ------------------ */
+/* HOME MEDIA QUERIES */
+/* ------------------ */
+
+@media (max-width: 1440px) {
+    .dots_top {
+        animation: enter_from_right 4s forwards;
+        transition: 200ms;
+    }
+
+    .description_home {
+        width: 400px;
+    }
+
+    @keyframes enter_from_right {
+
+        from {
+            left: 80%;
+          }
+          to {
+            left: 50%;
+          }
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .dots_top {
+        top: 180px;
+        animation: enter_from_right 4s forwards;
+        transition: 200ms;
+    }
+
+    @keyframes enter_from_right {
+
+        from {
+            left: 80%;
+          }
+          to {
+            left: 70%;
+          }
+    }
+
+    .home_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 100px;
+        margin-right: 100px;
+        min-height: 100%;
+    }
+
+    .left_side > h2 {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: -20px;
+    padding:0;
+    margin-top: 120px;
+    font-size: 4rem;
+    font-weight: 300;
+    
+    }
+
+    .left_side > h1 {
+        margin-bottom: -15px;
+        
+        font-size: 6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .left_side > h3 {
+        color: #929292;
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .left_side {
+        padding-left: 0;
+    }
+
+    .dots_bottom {
+        bottom: 150px;
+        animation: enter_from_left 3s forwards;
+        
+    }
+
+    .description_home {
+        font-size: 0.9rem;
+    }
+
+    .lines {
+        bottom: 0px;
+        right: 0px;
+        width: 70%;
+    }
+
+
+    .stack{
+        width: 400px;
+        height: 200px;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50%;
+        gap: 25px;
+        bottom: 5%;
+        right: 11%;
+    }
+
+
+    .stack_selector{
+        border: 2px solid rgb(255, 255, 255);
+        padding: 3.6rem;
+        animation: selecting_mobile 6s ease-out infinite alternate-reverse;
+        /* left -10 top -9
+        prima
+        left: -0.6rem;
+        top: -0.56rem;
+        seconda
+        left: 7.17rem; top: -0.56rem;
+        terza
+        left: 14.98rem; top: -0.56rem;
+        quarta
+        left: 22.81rem; top: -0.56rem;
+        
+        */
+    }
+
+    @keyframes selecting_mobile {
+        25% {left: -0.6rem; top: -0.56rem;}
+        50% {left: 7.17rem; top: -0.56rem;}
+        75% {left: 14.98rem; top: -0.56rem;}
+        100% {left: 22.81rem; top: -0.56rem}
+        /* 100% {left: -0.6rem; top: -0.56rem;} */
+    }
+
+    @keyframes enter_from_left {
+        from {
+            left: -10%;
+          }
+          to {
+            left: 10%;
+          }
+    }
+}
+
+@media (max-height: 900px){
+    .dots_bottom {
+        bottom: 60px;
+        animation: enter_from_left 3s forwards;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .home_container {
+        grid-template-columns: 1fr;
+    }
+    .description_home {
+        width: 300px;
+    }
+
+    .home_container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .left_side{
+        padding-left: 2rem;
+        padding-right: 1rem;
+        justify-content: center;
+    }
+
+    .left_side > h2 {
+        margin-top: 60px;
+        font-size: 3.5rem;
+        }
+    
+        .left_side > h1 {
+            font-size: 4.5rem;
+        }
+    
+        .left_side > h3 {
+         margin-top: 10px;
+         font-size: 1.1rem;  
+        }
+        
+        .right_side{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .dots_top {
+            top: 17%;
+            width: 20%;
+            animation: enter_from_right 2s ease-OUT forwards; 
+        }
+        .dots_bottom {
+            bottom: 30%;
+            width: 20%;
+            animation: enter_from_left 3s ease-OUT forwards;
+        }
+
+        .stack {
+            width: 320px;
+            height: 160px;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 50%;
+            gap: 0.5rem;
+            left: 0; 
+            right: 20px; 
+            bottom: 5px;
+            margin-left: auto; 
+            margin-right: auto; 
+             /* Need a specific value to work */
+        
+        }
+
+        .stack_element > img {
+            width: 50%;
+        }
+        
+        .stack_selector{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 2.7rem;
+            animation: selecting_mobile 6s ease-out infinite alternate-reverse;
+            border-radius: 20%;
+            left: -0.26rem; top: -0.26rem;
+        }
+
+
+        .lines {
+            left: none;
+            right: 0;
+            bottom: 0;
+            width:100%;
+        }
+        
+        @keyframes enter_from_right {
+
+            from {
+                left: 100%;
+              }
+              to {
+                left: 80%;
+              }
+        }
+
+        @keyframes enter_from_left {
+            from {
+                left: -28%;
+              }
+              to {
+                left: 1.4%;
+              }
+        }
+
+        @keyframes selecting_mobile {
+            25% {left: -0.26rem; top: -0.26rem;}
+            50% {left: 5.22rem; top: -0.26rem;}
+            75% {left: 10.73rem; top: -0.26rem;}
+            100% {left: 16.24rem; top: -0.26rem;}
+            /* 100% {left: -0.6rem; top: -0.56rem;} */
+        }
+        
+              
+}
