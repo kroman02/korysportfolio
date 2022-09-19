@@ -4,13 +4,42 @@
 }
 html { height: 100%; }
 
+
+
 body{
+    overflow-x: hidden;
     min-height: 100%;
     background: #222222;
     font-family: 'Inter', sans-serif;
     color: #fff;
-    overflow-y: hidden;
+    
 }
+
+.app_container {
+    
+   
+}
+
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #000000;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #27e98e;
+    
+
+}
+
 
 .stripes_img {
     background-image: url("../../public/stripesbg.svg");
@@ -18,7 +47,7 @@ body{
     background-size: cover;
     width: 74px;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     z-index: -2;
