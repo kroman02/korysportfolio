@@ -11,7 +11,7 @@ export default function Coding() {
 
     return(
         <div className="coding_container">
-            <img className="project_arrows" src="../../public/arrows.png"/>
+            <img className="project_arrows" src="/arrows.png"/>
             <h1 className="coding_header">Coding</h1>
             <div className="projectElements_container">
                 {projectsElements}
