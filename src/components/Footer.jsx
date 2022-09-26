@@ -16,12 +16,12 @@ export default function Footer() {
                 <h3 className="footer_name">footer</h3>
                 <img src={`${showFooter 
                 ? 
-                "../../public/arrowicon_down.png"
+                "/arrowicon_down.png"
                 : 
-                "../../public/arrowicon_up.png" }`
+                "/arrowicon_up.png" }`
                     } />
             </div>
-            {showFooter && <div className="logo_container"><img src="../../public/korylogo.jpg"/><p>©{year} by Kornel Roman </p></div>}
+            {showFooter && <div className="logo_container"><img src="/korylogo.jpg"/><p>©{year} by Kornel Roman </p></div>}
         </footer>
     )
 }
