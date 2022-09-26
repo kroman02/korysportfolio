@@ -21,20 +21,20 @@ export default function Home() {
                 <div className="description_home">
                 <p>I'm a creative individual with a background in computer science that enjoys working on purposeful technical projects.</p>
                 </div>
-                <img className="dots_bottom" src="../../public/dots_bottom.png"/>
+                <img className="dots_bottom" src="/dots_bottom.png"/>
             </div>
             <div className="right_side">
-                    <img className="dots_top" src="../../public/dots_top.png"/>
+                    <img className="dots_top" src="/dots_top.png"/>
                     
                     <div className="stack">
                         <div className="stack_selector"></div>
                         <div className="stack_element"><img src="/javalogo.png" /></div>
-                        <div className="stack_element"><img src="../../public/reactlogo.png" /></div>
-                        <div className="stack_element"><img src="../../public/springlogo.png" /></div>
-                        <div className="stack_element"><img src="../../public/javascriptlogo.png" /></div>
+                        <div className="stack_element"><img src="/reactlogo.png" /></div>
+                        <div className="stack_element"><img src="/springlogo.png" /></div>
+                        <div className="stack_element"><img src="/javascriptlogo.png" /></div>
                     </div>
                 
-                <img className="lines" src="../../public/lines.png"/>
+                <img className="lines" src="/lines.png"/>
             </div>
         </div>
     )
