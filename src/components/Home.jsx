@@ -28,10 +28,10 @@ export default function Home() {
                     
                     <div className="stack">
                         <div className="stack_selector"></div>
-                        <div className="stack_element"><img src={process.env.PUBLIC_URL+"public/javalogo.png"}/></div>
-                        <div className="stack_element"><img src="../../public/reactlogo.png"/></div>
-                        <div className="stack_element"><img src="../../public/springlogo.png"/></div>
-                        <div className="stack_element"><img src="../../public/javascriptlogo.png"/></div>
+                        <div className="stack_element"><img src="public/javalogo.png" /></div>
+                        <div className="stack_element"><img src="../../public/reactlogo.png" /></div>
+                        <div className="stack_element"><img src="../../public/springlogo.png" /></div>
+                        <div className="stack_element"><img src="../../public/javascriptlogo.png" /></div>
                     </div>
                 
                 <img className="lines" src="../../public/lines.png"/>
