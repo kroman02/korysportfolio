@@ -17,21 +17,21 @@ const data = [
         id: 2,
         title: "Android App - Job Board",
         stack: ["java"],
-        description: "A mobile application developed using Java and Android Studio that allows job seekers and employees to create accounts, job posts, rate other users and search for users stored in an embedded database. ",
+        description: "A mobile application developed using Java and Android Studio that allows job seekers and employees to create accounts, job posts, rate other users and search for users stored in an embedded database.",
         img_url: "https://i.postimg.cc/Gr8pLk1x/snaps-01-03.jpg"
     },
     {
         id: 3,
         title: "BakeMeUp Website",
         stack: ["react", "javascript", "html", "css"],
-        description: "lorem ipsum something somet",
+        description: "A colorful website designed for a small bakery in London",
         img_url: "https://i.postimg.cc/rqcyN3Rf/snaps-01-04.jpg"
     },
     {
         id: 4,
         title: "Trivia Game",
         stack: ["react", "javascript", "html", "css"],
-        description: "lorem ipsum something somet",
+        description: "A Trivia Game that uses the Open Trivia Database API to randomly display questions for the user. Questions can be either based on 4 different categories or mixed. Players can change category at any time.",
         img_url: "https://i.postimg.cc/rVdqpL7w/snaps-01-05.jpg"
     },
 ]

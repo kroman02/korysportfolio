@@ -18,12 +18,14 @@
     margin-bottom: -20px;
     padding:0;
     margin-top: 180px;
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 300;
+    letter-spacing: -1mm;
     
 }
 
 .left_side > h1 {
+    letter-spacing: -1mm;
     margin-bottom: -15px;
     
     font-size: 8rem;
@@ -32,6 +34,7 @@
 }
 
 .left_side > h3 {
+    letter-spacing: -0.4mm;
     color: #929292;
     font-size: 1.9rem;
     font-weight: 400;
@@ -47,6 +50,7 @@
     opacity: 0;
     animation: appear 2s forwards;
     animation-delay: 1s;
+    letter-spacing: -0.1mm;
 }
 
 
@@ -329,11 +333,13 @@
 
     .left_side > h2 {
         margin-top: 60px;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
+        
         }
     
         .left_side > h1 {
             font-size: 4.5rem;
+            margin-top: 10px;
         }
     
         .left_side > h3 {

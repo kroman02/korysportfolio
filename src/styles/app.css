@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-html { height: 100%; }
+html { height: 100% }
 
 
 
@@ -12,6 +12,8 @@ body{
     background: #222222;
     font-family: 'Inter', sans-serif;
     color: #fff;
+    min-height: 515px;
+    background-image: url('../../public/concrete-wall.png');
     
 }
 

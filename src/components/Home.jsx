@@ -15,11 +15,11 @@ export default function Home() {
     return (
         <div className="home_container">
             <div className="left_side">
-                <h2>Hi, I'm</h2>
+                <h2>Hi, my name is</h2>
                 <h1>{myName}</h1>
                 <h3>Software and Front-end Developer</h3> 
                 <div className="description_home">
-                <p>I'm a developer with a background in art and graphic design and I like working on purposeful technical projects.</p>
+                <p>I'm a creative individual with a background in computer science that enjoys working on purposeful technical projects.</p>
                 </div>
                 <img className="dots_bottom" src="../../public/dots_bottom.png"/>
             </div>

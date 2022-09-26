@@ -43,11 +43,11 @@ function Header() {
             
             <ul>
                 <li><NavLink className={({isActive}) => isActive ? "link active" : "link"} to="/">root</NavLink></li>
-                {/* <li><NavLink className={({isActive}) => isActive ? "link active" : "link"} to="/projects">projects</NavLink></li> */}
                 <li onMouseLeave={handleMouseExitFromLink} 
                 onMouseEnter={handleHoverLink}><a className="link" href="#">Projects</a>{(hoveringOnLink || hoveringOnMenu) && <Dropdown handleClick={handleClick} handleMouseOver={handleHoverMenu} handleMouseOut={handleMouseExitFromMenu} />}</li>
-                <li><NavLink className={({isActive}) => isActive ? "link active" : "link"} to="/aboutme">about me</NavLink></li>
-                <li><NavLink className={({isActive}) => isActive ? "link active" : "link"} to="/hireme">hire me</NavLink></li>
+                <li><NavLink className={({isActive}) => isActive ? "link active" : "link"} to="/hireme">contact</NavLink></li>
+                <li><a href="../../public/kornelroman_cv.pdf" target="blank" className="res">resume</a></li>
+                
             </ul>
            
         </header>

@@ -35,8 +35,20 @@ header a {
 
 .link.active {
     transition: 100ms;
-    font-weight: 900;
+    font-weight: 600;
     border-bottom: 5px solid #24FDAF;
+}
+
+.res {
+    box-sizing: border-box;
+    border: 1px #24FDAF solid;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+}
+
+.res:hover {
+    background: #24FDAF;
+    color: #222222;
 }
 
 
@@ -74,7 +86,7 @@ header a {
 }
 
 .link_dropped.active {
-    font-weight: 900;
+    font-weight: 600;
     border-bottom: 5px solid #222222;
 }
 
