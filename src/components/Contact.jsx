@@ -14,8 +14,8 @@ export default function () {
                         <h3>Connect with me on</h3>
                         <a href="https://www.linkedin.com/in/kory-r-11861b210/" target="blank">LinkedIn</a>
                         
-                        <p><img src="../../public/mailicon.png"/>kornelroman.dev@gmail.com</p>
-                        <p><img src="../../public/phoneicon.png"/>07506 060922</p>
+                        <p><img src="/mailicon.png"/>kornelroman.dev@gmail.com</p>
+                        <p><img src="/phoneicon.png"/>07506 060922</p>
                     </div>
                 </div>
 
