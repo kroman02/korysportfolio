@@ -235,10 +235,13 @@
     .contact_details {
         font-size: 0.8rem;
         border-left: 1px grey solid;
-        padding-left: 2rem;
+        padding-left: 1.5rem;
     }
 
     .form_container {
-        margin-top: 1rem;
+        margin-top: 1rem; 
+    }
+    .contact_info img {
+        display: none;
     }
 }
