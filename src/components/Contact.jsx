@@ -1,9 +1,43 @@
 import React from 'react'
+import emailjs from 'emailjs-com'
 import '../styles/contact.css'
 
-export default function () {
+export default function Contact() {
+
+    const [sent, setSent] = React.useState(false)
+
+    const [formData, setFormData] = React.useState(
+        {
+            fromName: "",
+            email: "",
+            subject: "",
+            message: ""
+        }
+    );
+
+    const handleChange = (event) => {
+        const {name, value} = event.target
+        setFormData(prevData => {
+            return {...prevData, [name] : value}
+        }
+            )
+
+            
+    }
+
+
+    const sendMessage = (event) => {
+        event.preventDefault();
+    
+        emailjs.sendForm('service_gfx39us', 'template_505bypd', event.target, 'AqyWHh4y6I8x89gC3' )
+        setSent(true)
+    }
+
+    
+
+
+
     return(
-        
         
         <div className="contact_container">
            
@@ -20,22 +54,28 @@ export default function () {
                 </div>
 
                 <div className="form_container">
-                    <form>
+                    <form onSubmit={sendMessage}>
                         <div className="name_email">
                             <div>
-                                <label htmlFor="name">Name / Company</label>
-                                <input id="name" type="text" name="name" value="" />
+                                <label htmlFor="fromName">Name / Company</label>
+                                <input onChange={handleChange} id="fromName" type="text" name="fromName" value={formData.fromName} />
                             </div>
                             <div>
                                 <label htmlFor="name">Email</label>
-                                <input id="email" type="text" name="email" value="" />
+                                <input onChange={handleChange} id="email" type="text" name="email" value={formData.email} />
                             </div>
                         </div>
-                         <label htmlFor="Subject">Subject</label>
-                        <input id="subject" type="text" name="subject" value="" />
+                         <label htmlFor="subject">Subject</label>
+                        <input onChange={handleChange} id="subject" type="text" name="subject" value={formData.subject} />
                         <label htmlFor="Subject">Message</label>
-                        <textarea id="message" name="subject" value="" />
-
+                        <textarea onChange={handleChange} id="message" name="message" value={formData.message}/>
+                        { sent 
+                        ? 
+                        <div className="message_sent"><p>Message sent! Thank you.</p></div>
+                        : 
+                        <button className="form_button"><img className="send_icon" src="https://i.ibb.co/jVqPdMR/send-icon.png" />Send</button>
+                        }
+                        
                     </form>
                 </div>
             </div>
