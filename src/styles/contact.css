@@ -185,12 +185,14 @@
 }
 
 .message_sent {
+    
     display: flex;
     justify-content: center;
 }
 
 .message_sent > p {
     color: #27e98e;
+    padding: 0.5rem;
     font-size: 1.2rem;
     font-weight: 700;
 }
@@ -223,7 +225,7 @@
     .contact_content  h2 {
         font-size: 2rem;
         margin-bottom: 4rem;
-        padding-right: 3rem;
+        padding-right: 1rem;
     }
 
     .contact_content a {
