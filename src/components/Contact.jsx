@@ -58,17 +58,17 @@ export default function Contact() {
                         <div className="name_email">
                             <div>
                                 <label htmlFor="fromName">Name / Company</label>
-                                <input onChange={handleChange} id="fromName" type="text" name="fromName" value={formData.fromName} />
+                                <input required onChange={handleChange} id="fromName" type="text" name="fromName" value={formData.fromName} />
                             </div>
                             <div>
                                 <label htmlFor="name">Email</label>
-                                <input onChange={handleChange} id="email" type="text" name="email" value={formData.email} />
+                                <input required onChange={handleChange} id="email" type="text" name="email" value={formData.email} />
                             </div>
                         </div>
                          <label htmlFor="subject">Subject</label>
                         <input onChange={handleChange} id="subject" type="text" name="subject" value={formData.subject} />
                         <label htmlFor="Subject">Message</label>
-                        <textarea onChange={handleChange} id="message" name="message" value={formData.message}/>
+                        <textarea required onChange={handleChange} id="message" name="message" value={formData.message}/>
                         { sent 
                         ? 
                         <div className="message_sent"><p>Message sent! Thank you.</p></div>
