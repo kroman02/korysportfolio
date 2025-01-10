@@ -19,7 +19,7 @@ export default function Home() {
                 <h1>{myName}</h1>
                 <h3>Software and Front-end Developer</h3> 
                 <div className="description_home">
-                <p>I'm a creative individual with a background in computer science that enjoys working on purposeful technical projects.</p>
+                <p>I'm a software engineer with a Master's degree in Computer Science, passionate about creating purposeful and impactful technical projects. With expertise in both front-end and back-end development, I bring innovative solutions to life.</p>
                 </div>
                 <img className="dots_bottom" src="/dots_bottom.png"/>
             </div>
