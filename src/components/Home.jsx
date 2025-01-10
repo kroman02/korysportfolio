@@ -8,7 +8,7 @@ export default function Home() {
     const [counter, setCounter] = useState(0)
     
        
-   
+   const statement = "I'm a software engineer with an MSc in Computer Science, dedicated to creating meaningful technical projects. I specialize in both front-end and back-end development, delivering innovative and impactful solutions."
     
 
 
@@ -17,9 +17,9 @@ export default function Home() {
             <div className="left_side">
                 <h2>Hi, my name is</h2>
                 <h1>{myName}</h1>
-                <h3>Software and Front-end Developer</h3> 
+                <h3>Software Engineer</h3> 
                 <div className="description_home">
-                <p>I'm a software engineer with a Master's degree in Computer Science, passionate about creating purposeful and impactful technical projects. With expertise in both front-end and back-end development, I bring innovative solutions to life.</p>
+                <p>{statement}</p>
                 </div>
                 <img className="dots_bottom" src="/dots_bottom.png"/>
             </div>
