@@ -40,10 +40,14 @@ header a {
 }
 
 .res {
+    
     box-sizing: border-box;
-    border: 1px #24FDAF solid;
+    border: 1px #a6a7a6 solid; /* 24fdaf */
     padding: 0.4rem 0.8rem;
     border-radius: 5px;
+    color: #a6a7a6;
+    pointer-events: none;
+    cursor: default;
 }
 
 .res:hover {

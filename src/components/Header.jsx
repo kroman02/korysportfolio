@@ -46,7 +46,7 @@ function Header() {
                 <li onMouseLeave={handleMouseExitFromLink} 
                 onMouseEnter={handleHoverLink}><a className="link" href="#">Projects</a>{(hoveringOnLink || hoveringOnMenu) && <Dropdown handleClick={handleClick} handleMouseOver={handleHoverMenu} handleMouseOut={handleMouseExitFromMenu} />}</li>
                 <li><NavLink className={({isActive}) => isActive ? "link active" : "link"} to="/hireme">contact</NavLink></li>
-                <li><a href="/kornelroman_cv.pdf" target="blank" className="res">resume</a></li>
+                <li><a disabled href="/" target="blank" className="res">resume</a></li>
                 
             </ul>
            
